@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SupportOpenIssueEmailJOB", "SupportOpenIssueEmailJOB.vbproj", "{E7687977-CB4B-4E92-BE94-E7990234A0F4}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SupportOpenIssueEmailJOBFinal", "..\SupportOpenIssueEmailJOBFinal\SupportOpenIssueEmailJOBFinal.vdproj", "{3E35C19B-07AE-41B7-88CD-2A29E5B785E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7687977-CB4B-4E92-BE94-E7990234A0F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7687977-CB4B-4E92-BE94-E7990234A0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7687977-CB4B-4E92-BE94-E7990234A0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7687977-CB4B-4E92-BE94-E7990234A0F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E35C19B-07AE-41B7-88CD-2A29E5B785E3}.Debug|Any CPU.ActiveCfg = Debug
+		{3E35C19B-07AE-41B7-88CD-2A29E5B785E3}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7229A08-1C7D-4930-8341-5F2129C109B4}
+	EndGlobalSection
+EndGlobal
