@@ -2,6 +2,7 @@
 Imports System.IO
 Imports System.Net
 Imports System.Net.Mail
+Imports System.Web
 Imports log4net
 Imports log4net.Config
 Imports Microsoft.Office.Interop
@@ -44,6 +45,18 @@ Module Module1
 
             If (dtData IsNot Nothing) Then
                 If (dtData.Rows.Count > 0) Then
+
+                    'Decode encoded text for export
+                    Dim dtSupportTemp As DataTable = dtData
+                    For Each drSupport In dtSupportTemp.Rows
+                        drSupport("IssueDescription") = HttpUtility.UrlDecode(drSupport("IssueDescription").ToString())
+                        drSupport("Resolution") = HttpUtility.UrlDecode(drSupport("Resolution").ToString())
+                        drSupport("ShortDescription") = HttpUtility.UrlDecode(drSupport("ShortDescription").ToString())
+                        drSupport("AdditionalComments") = HttpUtility.UrlDecode(drSupport("AdditionalComments").ToString())
+                        drSupport("CaseClosedBy") = HttpUtility.UrlDecode(drSupport("CaseClosedBy").ToString())
+                    Next
+                    dtData = dtSupportTemp
+
                     Dim items = (From p In dtData.AsEnumerable()
                                  Select New With {
                                                   .SupportDateTime = p.Field(Of DateTime?)("SupportDateTime"),
